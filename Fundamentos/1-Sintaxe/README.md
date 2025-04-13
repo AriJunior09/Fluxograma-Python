@@ -54,9 +54,7 @@ print(a > b and b > 0)
 ```
 
 # 6. Condicionais (if / elif / else)
-python
-Copiar
-Editar
+```python
 nota = 7
 
 if nota >= 7:
@@ -65,10 +63,10 @@ elif nota >= 5:
     print("Recuperação")
 else:
     print("Reprovado")
-📌 7. Laços de Repetição (while e for)
-python
-Copiar
-Editar
+```
+
+# 7. Laços de Repetição (while e for)
+```python
 # while
 contador = 0
 while contador < 5:
@@ -78,11 +76,12 @@ while contador < 5:
 # for
 for i in range(5):
     print(i)
-📌 8. Funções (def)
-python
-Copiar
-Editar
+```
+
+# 8. Funções (def)
+```python
 def saudacao(nome):
     print(f"Olá, {nome}!")
 
 saudacao("Maria")
+```
