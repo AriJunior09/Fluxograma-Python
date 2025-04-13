@@ -1,50 +1,88 @@
-## Bloco 1 – Variáveis, print() e input()
+# 1. Comentários
+Comentários são ignorados pelo interpretador, usados para explicar o código.
 
-- Exercício 1:
-Crie um programa que peça o nome do usuário e imprima uma saudação.
+```python
+# Isso é um comentário de linha única, usamos o jogo da Velha
 
-- Exercício 2:
-Peça a idade e mostre quantos anos a pessoa terá em 10 anos.
+"""
+Isso é um comentário
+de várias linhas (docstring), usamos 3 aspas duplas.
+"""
+```
 
-- Exercício 3:
-Peça dois números ao usuário e mostre a soma, subtração, multiplicação e divisão.
+# 2. Variáveis e Tipos de Dados
 
----
-## Bloco 2 – Condicionais (if / elif / else)
-- Exercício 4:
-Peça a idade de uma pessoa e diga se ela é:
+```python
+nome = "João"           # String
+idade = 25              # Inteiro (int)
+altura = 1.75           # Ponto flutuante (float)
+tem_carteira = True     # Booleano (bool)
 
-Menor de idade (menos de 18)
+Você não precisa declarar o tipo — o Python faz isso automaticamente.
+```
 
-Maior de idade (18 ou mais)
+# 3. Função print() e input()
+```python
+print("Olá, mundo!")
+nome = input("Qual seu nome? ")
+print("Olá, " + nome)
+```
 
-Idosa (acima de 60)
+# 4. Indentação (Muito importante no Python!)
+Em vez de chaves {} como em Java/C/C++, o Python usa espaços (indentação).
 
-- Exercício 5:
-Peça uma nota (de 0 a 10) e diga:
+```python
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+```
 
-Se a nota for maior ou igual a 7 → "Aprovado"
+# 5. Operadores
+Aritméticos: +, -, *, /, //, %, **
 
-Se entre 5 e 7 → "Recuperação"
+Comparação: ==, !=, <, >, <=, >=
 
-Senão → "Reprovado"
+Lógicos: and, or, not
 
----
-## Bloco 3 – Laços de Repetição
-- Exercício 6:
-Use um while para imprimir os números de 1 a 10.
+```python
+a = 10
+b = 3
+print(a + b)     # Soma
+print(a // b)    # Divisão inteira
+print(a > b and b > 0)
+```
 
-- Exercício 7:
-Use um for para imprimir a tabuada do 5 (de 5x1 até 5x10).
+# 6. Condicionais (if / elif / else)
+python
+Copiar
+Editar
+nota = 7
 
-- Exercício 8:
-Peça ao usuário um número n e calcule a soma de todos os números de 1 até n.
+if nota >= 7:
+    print("Aprovado")
+elif nota >= 5:
+    print("Recuperação")
+else:
+    print("Reprovado")
+📌 7. Laços de Repetição (while e for)
+python
+Copiar
+Editar
+# while
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
 
----
-## Bloco 4 – Funções
-- Exercício 9:
-Crie uma função chamada dobro() que receba um número como argumento e retorne o dobro dele.
+# for
+for i in range(5):
+    print(i)
+📌 8. Funções (def)
+python
+Copiar
+Editar
+def saudacao(nome):
+    print(f"Olá, {nome}!")
 
-- Exercício 10:
-Crie uma função chamada eh_par() que recebe um número e retorna True se for par, e False se for ímpar.
-
+saudacao("Maria")
